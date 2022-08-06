@@ -3,10 +3,15 @@ body {
 }
 
 nav {
-    justify-content: space-evenly;
-    display:inline-block;
-    z-index: 1;
-    height:fit-content
+        padding-left: 40px;
+        padding-right: 40px; 
+}
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white !important;
 }
 #hero {
     /* height: 100vh;
@@ -14,9 +19,36 @@ nav {
     background-image: url(../Images/hero-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* display: block; */
-    /* z-index: -1 */
-  
     background-position:center;
     height: 75vh;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60%;
+}
+.jumbotron p {
+    text-align: center;
+    color: white;
+}
+.jumbotron h1 {
+    color: white;
+    font-weight: 800;
+
+}
+
+
+.jumbotron h1 span {
+  
+    font-weight: 300;
+
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
